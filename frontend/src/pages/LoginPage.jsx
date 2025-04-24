@@ -30,7 +30,7 @@ const LoginPage = () => {
         return;
       }
 
-      const res = await axios.post("http://localhost:3000/api/users/login", { username: form.username, password: form.password });
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users/login`, { username: form.username, password: form.password });
 
       alert(res.data.message);
 

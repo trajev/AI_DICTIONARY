@@ -20,7 +20,7 @@ const HomePage = () => {
 
       console.log("word :", wordEntry, " token: ", token )
 
-      const res = await axios.post("https://localhost:3000/api/word/bookmark", { wordId: wordEntry._id }, {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/word/bookmark`, { wordId: wordEntry._id }, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
@@ -85,7 +85,7 @@ const HomePage = () => {
       setWordEntry(null);
 
       const res = await axios.post(
-        "http://localhost:3000/api/word/define",
+        `${import.meta.env.VITE_BACKEND_URL}/api/word/define`,
         { word },
         {
           headers: {
