@@ -1,0 +1,4 @@
+MONGO_URI=mongodb+srv://trajeev:test123@cluster0.ggx8e.mongodb.net/AI_DICTIONARY
+PORT=3000
+JWT_SECRET="your_jwt_secret"
+GEMINI_API=AIzaSyDcDQzMhy5MkobC4iLAB26da8vzBYIep1g
